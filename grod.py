@@ -55,5 +55,12 @@ test_reduce_1 = factory_tst_disturber(reduce, 100, 10)
 
 test_reduce_2 = factory_tst_disturber(xreduce, 1000, 10)
 
+# previous tests not called, so I make some test that call em explicitly:
+def test_1():
+    test_reduce_1()
+
+def test_2():
+    test_reduce_2()
+
 
 
